@@ -1,0 +1,105 @@
+#nav ul li{
+    display: inline;
+ }
+
+.navi{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #ffffff;
+    background: #7f8c8d;
+    transition: .4s;
+  }
+
+
+
+
+
+.navi:hover {
+    background: #16a085;
+    color: white;
+}
+
+.firstbox{
+    background: url("img/mainback.jpg") center center / cover no-repeat fixed;
+    text-align: center;
+    padding : 0px ;
+    color: #ffffff;
+}
+
+.square_btn{
+    display: inline-block;
+    position: relative;
+    padding: 0.35em 1em;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    text-decoration: none;
+}
+
+.square_btn:before{
+    content: "";
+    position: absolute;
+    top: -16px;
+    left: 0;
+    width: -webkit-calc(100% - 16px);
+    width: calc(100% - 16px);
+    height: 0;
+    border: solid 8px transparent;
+    border-bottom-color: #8eacec;/*ボタン色より明るめの色に*/
+}
+
+.square_btn:active{/*押したとき*/
+    padding: 0.32em 0.9em;
+    -ms-transform: translateY(-2px);
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.square_btn:active:before{
+    width: -webkit-calc(100% - 12px);
+    width: calc(100% - 12px);
+}
+
+.square_btn:active:before{
+   top:-12px;
+   border-width: 6px;
+}
+
+
+mainBox {
+    width: 1000px;
+    margin: 0 auto;
+}
+#parent {
+    width: 1920px;
+    margin-right: -20px;
+}
+#parent .child {
+    width: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    display: inline;    /*for ie*/
+    font-size: 12px;
+}
+#parent .child .img {
+    width: 350px;
+    height: auto;
+    background-color: #52D3FF;
+    margin-bottom: 12px;
+}
+#parent .child .title {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.clear{
+   clear: both;
+}
+
+
+.all{
+  color: #8b5cff
+}
