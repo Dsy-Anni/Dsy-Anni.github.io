@@ -22,12 +22,8 @@
     color: white;
 }
 
-.firstbox{
-    background: url("img/mainback.jpg") center center / cover no-repeat fixed;
-    text-align: center;
-    padding : 0px ;
-    color: #ffffff;
-}
+
+
 
 .square_btn{
     display: inline-block;
@@ -68,6 +64,72 @@
 }
 
 
+.all{
+  color: #8b5cff
+}
+
+
+
+@media screen and (min-width:0px){
+  mainBox {
+      width: 299px;
+      margin: 0 auto;
+  }
+
+
+  #parent {
+      width: 299px;
+      margin-right: -20px;
+  }
+  #parent .child {
+      width: 299px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+      float: left;
+      display: inline;    /*for ie*/
+      font-size: 12px;
+  }
+  #parent .child .img {
+      width: 299px;
+      height: auto;
+      background-color: #52D3FF;
+      margin-bottom: 12px;
+  }
+  #parent .child .title {
+      font-weight: bold;
+      margin-bottom: 20px;
+  }
+
+  .firstbox{
+      background: url("img/mainback.jpg") center center / cover no-repeat fixed;
+      text-align: center;
+      padding : 0px ;
+      color: #ffffff;
+      max-width: 299px
+
+  }
+
+  .logopic{
+      background: url("img/mainback.jpg") center center / cover no-repeat fixed;
+      text-align: center;
+      padding : 0px ;
+      color: #ffffff;
+  }
+}
+
+@media screen and (min-width:980px){
+  
+}
+
+
+
+.firstbox{
+    background: url("img/mainback.jpg") center center / cover no-repeat fixed;
+    text-align: center;
+    padding : 0px ;
+    color: #ffffff;
+}
+
 mainBox {
     width: 1000px;
     margin: 0 auto;
@@ -97,9 +159,4 @@ mainBox {
 
 .clear{
    clear: both;
-}
-
-
-.all{
-  color: #8b5cff
 }
